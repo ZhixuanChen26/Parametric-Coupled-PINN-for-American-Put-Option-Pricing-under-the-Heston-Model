@@ -1,0 +1,76 @@
+{
+  "seed": 59,
+  "checkpoint_directory": "saved_models",
+  "sampling": {
+    "state": "uniform",
+    "parameters": "uniform rejection sample from the Feller admissible box",
+    "v_range": [
+      0.01,
+      1.0
+    ],
+    "tau_range": [
+      0.0,
+      1.0
+    ],
+    "s_range": [
+      0.0,
+      2.0
+    ]
+  },
+  "boundary_conditions": {
+    "n": 200000,
+    "value_matching": {
+      "mean": 0.0007964206743054092,
+      "median": 0.0005584955215454102,
+      "p95": 0.0023602121509611607,
+      "max": 0.014915049076080322
+    },
+    "smooth_pasting": {
+      "mean": 0.001455020857974887,
+      "median": 0.0010142922401428223,
+      "p95": 0.0038245944306254387,
+      "max": 0.2559630870819092
+    },
+    "boundary_maturity": {
+      "mean": 0.007267411332577467,
+      "median": 0.006979405879974365,
+      "p95": 0.014147346839308739,
+      "max": 0.027946949005126953
+    },
+    "raw_boundary": {
+      "min": 0.2964063882827759,
+      "max": 1.0001548528671265,
+      "mean": 0.6014576554298401,
+      "fraction_nonpositive": 0.0,
+      "fraction_above_one": 4.999999873689376e-06
+    }
+  },
+  "exercise_region": {
+    "n": 200000,
+    "payoff_error": {
+      "mean": 0.0007131104939617217,
+      "median": 0.0005666613578796387,
+      "p95": 0.001892637461423874,
+      "max": 0.010730624198913574
+    }
+  },
+  "intrinsic_lower_bound": {
+    "all_domain": {
+      "n": 200000,
+      "n_violated": 9436,
+      "violation_rate": 0.04718000069260597,
+      "mean_when_violated": 0.0003653022868093103,
+      "p95_when_violated": 0.0010234378278255463,
+      "max": 0.010009676218032837
+    },
+    "near_boundary_band": 0.05,
+    "near_boundary": {
+      "n": 9837,
+      "n_violated": 1439,
+      "violation_rate": 0.14628443121910095,
+      "mean_when_violated": 0.0006479453877545893,
+      "p95_when_violated": 0.001864364487119019,
+      "max": 0.010009676218032837
+    }
+  }
+}

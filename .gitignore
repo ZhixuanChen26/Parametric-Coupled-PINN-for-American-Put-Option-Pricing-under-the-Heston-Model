@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# macOS and tool state
+.DS_Store
+.claude/
+
+# Local working files and cluster logs
+/logs/
+/tmp/
+
+# Thesis PDF is not distributed
+/output/pdf/
+
+# Legacy items that are not part of the release
+/eval_best_table9.py
+/saved_models/*_best.pth
+
+# Figures the scripts write into the working directory.
+# The figures used in the thesis are kept in "Final Graph/".
+/*.png

@@ -1,0 +1,98 @@
+{
+  "checkpoint_directory": "saved_models",
+  "pde_residual": {
+    "n_common_continuation_points": 20000,
+    "seed": 59,
+    "tau_range": [
+      1e-05,
+      1.0
+    ],
+    "normalized_s_range": [
+      0.0,
+      2.0
+    ],
+    "continuation_margin": 0.01,
+    "minimum_distance_to_predicted_boundary": 0.010086238384246826,
+    "parameters": "uniform rejection sample over Feller admissible set",
+    "statistics": [
+      {
+        "v": 0.0,
+        "mean": 0.001976756611838937,
+        "median": 0.0012212961446493864,
+        "p95": 0.006362612824887037,
+        "max": 0.032254353165626526
+      },
+      {
+        "v": 0.001,
+        "mean": 0.0019413562258705497,
+        "median": 0.0012021508300676942,
+        "p95": 0.0062420726753771305,
+        "max": 0.032010000199079514
+      },
+      {
+        "v": 0.01,
+        "mean": 0.0017363266088068485,
+        "median": 0.0010791064705699682,
+        "p95": 0.0056250374764204025,
+        "max": 0.029854638502001762
+      },
+      {
+        "v": 0.05,
+        "mean": 0.0014567620819434524,
+        "median": 0.0009399863774888217,
+        "p95": 0.004622721578925848,
+        "max": 0.02247336506843567
+      },
+      {
+        "v": 0.1,
+        "mean": 0.001347781508229673,
+        "median": 0.000885853311046958,
+        "p95": 0.0041408115066587925,
+        "max": 0.021572977304458618
+      }
+    ]
+  },
+  "benchmark_boundary": {
+    "benchmark_parameters": {
+      "K": 10.0,
+      "tau": 0.25,
+      "kappa": 5.0,
+      "theta": 0.16,
+      "sigma_v": 0.9,
+      "rho": 0.1
+    },
+    "rows": [
+      {
+        "v": 0.0,
+        "predicted_S_star": 8.608137130737305
+      },
+      {
+        "v": 0.001,
+        "predicted_S_star": 8.602921485900879
+      },
+      {
+        "v": 0.01,
+        "predicted_S_star": 8.552656173706055
+      },
+      {
+        "v": 0.05,
+        "predicted_S_star": 8.268375396728516
+      },
+      {
+        "v": 0.1,
+        "predicted_S_star": 7.865102767944336
+      }
+    ],
+    "fine_grid": {
+      "v_range": [
+        0.0,
+        0.1
+      ],
+      "n": 501,
+      "positive_steps": 0,
+      "negative_steps": 500,
+      "max_absolute_step": 0.001644134521484375,
+      "max_absolute_second_difference": 4.76837158203125e-06
+    }
+  }
+}

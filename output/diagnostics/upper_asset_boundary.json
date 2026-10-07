@@ -1,0 +1,131 @@
+{
+  "seed": 59,
+  "sample_size": 20000,
+  "s_levels": [
+    1.6,
+    1.8,
+    1.9,
+    1.95,
+    2.0
+  ],
+  "v_range": [
+    0.01,
+    1.0
+  ],
+  "tau_range": [
+    1e-05,
+    1.0
+  ],
+  "parameters": "uniform rejection sample over the Feller-admissible box",
+  "same_points_at_each_s": true,
+  "maximum_predicted_boundary": 0.9966683387756348,
+  "price_quantity": "raw normalized price p",
+  "pde_at_s_max": "not evaluated because the PDE is an interior condition",
+  "rows": [
+    {
+      "s": 1.6,
+      "absolute_raw_normalized_price": {
+        "mean": 0.025258755311369896,
+        "median": 0.021571815013885498,
+        "p95": 0.06437066197395325,
+        "max": 0.10049539804458618
+      },
+      "absolute_asset_derivative": {
+        "mean": 0.0776982232928276,
+        "median": 0.07417672127485275,
+        "p95": 0.17184098064899445,
+        "max": 0.23501995205879211
+      },
+      "positive_slope_rate": 0.015250000171363354,
+      "absolute_pde_residual": {
+        "mean": 0.001457543345168233,
+        "median": 0.0009536640718579292,
+        "p95": 0.004620197229087353,
+        "max": 0.026688162237405777
+      }
+    },
+    {
+      "s": 1.8,
+      "absolute_raw_normalized_price": {
+        "mean": 0.01160706952214241,
+        "median": 0.009162068367004395,
+        "p95": 0.031896572560071945,
+        "max": 0.05541594326496124
+      },
+      "absolute_asset_derivative": {
+        "mean": 0.061743274331092834,
+        "median": 0.05322909355163574,
+        "p95": 0.15550780296325684,
+        "max": 0.2238655388355255
+      },
+      "positive_slope_rate": 0.053950000554323196,
+      "absolute_pde_residual": {
+        "mean": 0.0017899776576086879,
+        "median": 0.0011384114623069763,
+        "p95": 0.005690518766641617,
+        "max": 0.027796851471066475
+      }
+    },
+    {
+      "s": 1.9,
+      "absolute_raw_normalized_price": {
+        "mean": 0.0056255050003528595,
+        "median": 0.004034742712974548,
+        "p95": 0.016603143885731697,
+        "max": 0.034721001982688904
+      },
+      "absolute_asset_derivative": {
+        "mean": 0.0587427020072937,
+        "median": 0.04935029521584511,
+        "p95": 0.15161317586898804,
+        "max": 0.2200918048620224
+      },
+      "positive_slope_rate": 0.07734999805688858,
+      "absolute_pde_residual": {
+        "mean": 0.001980387605726719,
+        "median": 0.001208255416713655,
+        "p95": 0.0063423109240829945,
+        "max": 0.030722061172127724
+      }
+    },
+    {
+      "s": 1.95,
+      "absolute_raw_normalized_price": {
+        "mean": 0.0027573993429541588,
+        "median": 0.00158633291721344,
+        "p95": 0.009194089099764824,
+        "max": 0.024405047297477722
+      },
+      "absolute_asset_derivative": {
+        "mean": 0.05811283737421036,
+        "median": 0.048504967242479324,
+        "p95": 0.1505649983882904,
+        "max": 0.21839337050914764
+      },
+      "positive_slope_rate": 0.08060000091791153,
+      "absolute_pde_residual": {
+        "mean": 0.0022768420167267323,
+        "median": 0.0013588324654847383,
+        "p95": 0.007394938264042139,
+        "max": 0.03509700670838356
+      }
+    },
+    {
+      "s": 2.0,
+      "absolute_raw_normalized_price": {
+        "mean": 0.0008510379702784121,
+        "median": 0.0005405992269515991,
+        "p95": 0.0026936433278024197,
+        "max": 0.01410721242427826
+      },
+      "absolute_asset_derivative": {
+        "mean": 0.05792124569416046,
+        "median": 0.04841850697994232,
+        "p95": 0.14957356452941895,
+        "max": 0.21678994596004486
+      },
+      "positive_slope_rate": 0.0783500000834465,
+      "absolute_pde_residual": null
+    }
+  ]
+}

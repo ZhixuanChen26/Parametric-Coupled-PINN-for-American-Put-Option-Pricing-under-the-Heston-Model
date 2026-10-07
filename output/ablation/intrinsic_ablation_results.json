@@ -1,0 +1,364 @@
+{
+  "seed": 59,
+  "sample_sizes": {
+    "main": 200000,
+    "pde": 50000
+  },
+  "state_domain": {
+    "s": [
+      0.0,
+      2.0
+    ],
+    "v": [
+      0.01,
+      1.0
+    ],
+    "tau": [
+      0.0,
+      1.0
+    ]
+  },
+  "near_boundary_band": 0.05,
+  "models": {
+    "0": {
+      "checkpoint_directory": "saved_models_ablation_no_intrinsic",
+      "benchmark": {
+        "n": 10,
+        "reference_precision": "four-decimal values stored in benchmark_data.py",
+        "prices": [
+          1.9999998807907104,
+          1.1096796989440918,
+          0.5248579382896423,
+          0.21746845543384552,
+          0.08383461833000183,
+          2.0846054553985596,
+          1.3382328748703003,
+          0.8004582524299622,
+          0.45261770486831665,
+          0.24662071466445923
+        ],
+        "mean_absolute_difference": 0.0036475793458521366,
+        "maximum_absolute_difference": 0.0061054229736328125
+      },
+      "exercise_region": {
+        "n": 200000,
+        "payoff_residual": {
+          "mean": 0.1581944078207016,
+          "median": 0.016439497470855713,
+          "p95": 0.7253628373146057,
+          "max": 1.4163751602172852
+        }
+      },
+      "intrinsic_lower_bound": {
+        "all_domain": {
+          "n": 200000,
+          "n_violated": 2973,
+          "violation_rate": 0.014864999800920486,
+          "mean_when_violated": 0.0007059155614115298,
+          "p95_when_violated": 0.0026088026352226734,
+          "max": 0.012509390711784363
+        },
+        "near_boundary_band": 0.05,
+        "near_boundary": {
+          "n": 10102,
+          "n_violated": 1849,
+          "violation_rate": 0.1830330640077591,
+          "mean_when_violated": 0.0009087636135518551,
+          "p95_when_violated": 0.003039848292246461,
+          "max": 0.012509390711784363
+        }
+      },
+      "boundary_conditions": {
+        "n": 200000,
+        "value_matching": {
+          "mean": 0.0010131353046745062,
+          "median": 0.0006079971790313721,
+          "p95": 0.003362895455211401,
+          "max": 0.021308109164237976
+        },
+        "smooth_pasting": {
+          "mean": 0.0029967473819851875,
+          "median": 0.002726435661315918,
+          "p95": 0.0056566111743450165,
+          "max": 0.2214154601097107
+        },
+        "boundary_at_maturity": {
+          "mean": 0.008320048451423645,
+          "median": 0.007436811923980713,
+          "p95": 0.017266761511564255,
+          "max": 0.031102418899536133
+        },
+        "raw_boundary": {
+          "min": 0.2922632098197937,
+          "max": 0.9995060563087463,
+          "fraction_nonpositive": 0.0,
+          "fraction_above_one": 0.0
+        }
+      },
+      "pde": {
+        "n": 50000,
+        "absolute_residual": {
+          "mean": 0.001882675220258534,
+          "median": 0.0013634940842166543,
+          "p95": 0.005442702677100897,
+          "max": 0.02745911106467247
+        }
+      }
+    },
+    "5": {
+      "checkpoint_directory": "saved_models_ablation_intrinsic_w5",
+      "benchmark": {
+        "n": 10,
+        "reference_precision": "four-decimal values stored in benchmark_data.py",
+        "prices": [
+          1.9999998807907104,
+          1.1068358421325684,
+          0.5267679691314697,
+          0.22021058201789856,
+          0.08560977876186371,
+          2.07722544670105,
+          1.3354530334472656,
+          0.8014364242553711,
+          0.45539721846580505,
+          0.2495991438627243
+        ],
+        "mean_absolute_difference": 0.004071295261383057,
+        "maximum_absolute_difference": 0.00719723105430603
+      },
+      "exercise_region": {
+        "n": 200000,
+        "payoff_residual": {
+          "mean": 0.0010083779925480485,
+          "median": 0.0007562041282653809,
+          "p95": 0.0028087012469768524,
+          "max": 0.03062063455581665
+        }
+      },
+      "intrinsic_lower_bound": {
+        "all_domain": {
+          "n": 200000,
+          "n_violated": 6474,
+          "violation_rate": 0.03237000107765198,
+          "mean_when_violated": 0.0005334136076271534,
+          "p95_when_violated": 0.002159894211217761,
+          "max": 0.021324723958969116
+        },
+        "near_boundary_band": 0.05,
+        "near_boundary": {
+          "n": 10065,
+          "n_violated": 2434,
+          "violation_rate": 0.24182811379432678,
+          "mean_when_violated": 0.0011151737999171019,
+          "p95_when_violated": 0.0036680218763649464,
+          "max": 0.021324723958969116
+        }
+      },
+      "boundary_conditions": {
+        "n": 200000,
+        "value_matching": {
+          "mean": 0.0011719829635694623,
+          "median": 0.0007693767547607422,
+          "p95": 0.003880414180457592,
+          "max": 0.026709914207458496
+        },
+        "smooth_pasting": {
+          "mean": 0.0013745722826570272,
+          "median": 0.0008974671363830566,
+          "p95": 0.004077020101249218,
+          "max": 0.3097745180130005
+        },
+        "boundary_at_maturity": {
+          "mean": 0.012882133945822716,
+          "median": 0.011758863925933838,
+          "p95": 0.025124497711658478,
+          "max": 0.03820401430130005
+        },
+        "raw_boundary": {
+          "min": 0.29672348499298096,
+          "max": 0.997900128364563,
+          "fraction_nonpositive": 0.0,
+          "fraction_above_one": 0.0
+        }
+      },
+      "pde": {
+        "n": 50000,
+        "absolute_residual": {
+          "mean": 0.001510386704467237,
+          "median": 0.0010261237621307373,
+          "p95": 0.004511547274887562,
+          "max": 0.030659060925245285
+        }
+      }
+    },
+    "10": {
+      "checkpoint_directory": "saved_models",
+      "benchmark": {
+        "n": 10,
+        "reference_precision": "four-decimal values stored in benchmark_data.py",
+        "prices": [
+          1.9999998807907104,
+          1.1003036499023438,
+          0.5185160636901855,
+          0.21379470825195312,
+          0.08129402995109558,
+          2.0696332454681396,
+          1.3265304565429688,
+          0.7928950786590576,
+          0.44822633266448975,
+          0.24385526776313782
+        ],
+        "mean_absolute_difference": 0.002980399178341031,
+        "maximum_absolute_difference": 0.00886678695678711
+      },
+      "exercise_region": {
+        "n": 200000,
+        "payoff_residual": {
+          "mean": 0.000710177468135953,
+          "median": 0.0005622506141662598,
+          "p95": 0.0018867566250264645,
+          "max": 0.012848615646362305
+        }
+      },
+      "intrinsic_lower_bound": {
+        "all_domain": {
+          "n": 200000,
+          "n_violated": 9424,
+          "violation_rate": 0.047120001167058945,
+          "mean_when_violated": 0.000372749607777223,
+          "p95_when_violated": 0.0010801611933857203,
+          "max": 0.00803595781326294
+        },
+        "near_boundary_band": 0.05,
+        "near_boundary": {
+          "n": 10093,
+          "n_violated": 1549,
+          "violation_rate": 0.15347270667552948,
+          "mean_when_violated": 0.0006505129858851433,
+          "p95_when_violated": 0.0019049399998039007,
+          "max": 0.00803595781326294
+        }
+      },
+      "boundary_conditions": {
+        "n": 200000,
+        "value_matching": {
+          "mean": 0.0007955845794640481,
+          "median": 0.0005578100681304932,
+          "p95": 0.0023595206439495087,
+          "max": 0.015464812517166138
+        },
+        "smooth_pasting": {
+          "mean": 0.0014397060731425881,
+          "median": 0.0010131597518920898,
+          "p95": 0.003788590431213379,
+          "max": 0.19182902574539185
+        },
+        "boundary_at_maturity": {
+          "mean": 0.007265227846801281,
+          "median": 0.006977200508117676,
+          "p95": 0.014117195270955563,
+          "max": 0.02820032835006714
+        },
+        "raw_boundary": {
+          "min": 0.2994053363800049,
+          "max": 0.9998030662536621,
+          "fraction_nonpositive": 0.0,
+          "fraction_above_one": 0.0
+        }
+      },
+      "pde": {
+        "n": 50000,
+        "absolute_residual": {
+          "mean": 0.0014850909356027842,
+          "median": 0.0009852424263954163,
+          "p95": 0.004615922924131155,
+          "max": 0.038594383746385574
+        }
+      }
+    },
+    "20": {
+      "checkpoint_directory": "saved_models_ablation_intrinsic_w20",
+      "benchmark": {
+        "n": 10,
+        "reference_precision": "four-decimal values stored in benchmark_data.py",
+        "prices": [
+          1.9999998807907104,
+          1.1104278564453125,
+          0.5282139182090759,
+          0.22002089023590088,
+          0.08381511270999908,
+          2.079732656478882,
+          1.3388739824295044,
+          0.8037194609642029,
+          0.4554455876350403,
+          0.24742856621742249
+        ],
+        "mean_absolute_difference": 0.004577810876071453,
+        "maximum_absolute_difference": 0.008313894271850586
+      },
+      "exercise_region": {
+        "n": 200000,
+        "payoff_residual": {
+          "mean": 0.0008749382686801255,
+          "median": 0.0006868839263916016,
+          "p95": 0.0023642266169190407,
+          "max": 0.015799373388290405
+        }
+      },
+      "intrinsic_lower_bound": {
+        "all_domain": {
+          "n": 200000,
+          "n_violated": 10817,
+          "violation_rate": 0.05408500134944916,
+          "mean_when_violated": 0.0005037562805227935,
+          "p95_when_violated": 0.002272212877869606,
+          "max": 0.012798801064491272
+        },
+        "near_boundary_band": 0.05,
+        "near_boundary": {
+          "n": 10084,
+          "n_violated": 2846,
+          "violation_rate": 0.2822292745113373,
+          "mean_when_violated": 0.0012625101953744888,
+          "p95_when_violated": 0.004162125289440155,
+          "max": 0.012798801064491272
+        }
+      },
+      "boundary_conditions": {
+        "n": 200000,
+        "value_matching": {
+          "mean": 0.0012793412897735834,
+          "median": 0.0007319450378417969,
+          "p95": 0.004266213625669479,
+          "max": 0.02083715796470642
+        },
+        "smooth_pasting": {
+          "mean": 0.0013654252979904413,
+          "median": 0.0008329153060913086,
+          "p95": 0.0037225931882858276,
+          "max": 0.25218337774276733
+        },
+        "boundary_at_maturity": {
+          "mean": 0.006063147448003292,
+          "median": 0.005452871322631836,
+          "p95": 0.013691544532775879,
+          "max": 0.03635108470916748
+        },
+        "raw_boundary": {
+          "min": 0.2822485566139221,
+          "max": 1.0009692907333374,
+          "fraction_nonpositive": 0.0,
+          "fraction_above_one": 4.999999873689376e-06
+        }
+      },
+      "pde": {
+        "n": 50000,
+        "absolute_residual": {
+          "mean": 0.0018745636334642768,
+          "median": 0.0012753047049045563,
+          "p95": 0.005632930435240269,
+          "max": 0.050918128341436386
+        }
+      }
+    }
+  }
+}

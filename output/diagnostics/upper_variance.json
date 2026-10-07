@@ -1,0 +1,104 @@
+{
+  "checkpoint_directory": "saved_models",
+  "common_point_diagnostics": {
+    "n_common_continuation_points": 20000,
+    "seed": 59,
+    "tau_range": [
+      1e-05,
+      1.0
+    ],
+    "normalized_s_range": [
+      0.0,
+      2.0
+    ],
+    "continuation_margin": 0.01,
+    "minimum_distance_to_predicted_boundary": 0.01011514663696289,
+    "parameters": "uniform rejection sample over Feller admissible set",
+    "price_derivative": "derivative of normalized price p with respect to v",
+    "rows": [
+      {
+        "v": 0.8,
+        "absolute_pde_residual": {
+          "mean": 0.0016254306538030505,
+          "median": 0.0010673810029402375,
+          "p95": 0.005208727903664112,
+          "max": 0.028166010975837708
+        },
+        "absolute_normalized_price_derivative": {
+          "mean": 0.04055475816130638,
+          "median": 0.038450468331575394,
+          "p95": 0.08774839341640472,
+          "max": 0.12847945094108582
+        }
+      },
+      {
+        "v": 0.9,
+        "absolute_pde_residual": {
+          "mean": 0.001836297451518476,
+          "median": 0.0012081898748874664,
+          "p95": 0.005841899663209915,
+          "max": 0.03199445828795433
+        },
+        "absolute_normalized_price_derivative": {
+          "mean": 0.039685431867837906,
+          "median": 0.03801152855157852,
+          "p95": 0.08287223428487778,
+          "max": 0.1173250749707222
+        }
+      },
+      {
+        "v": 0.95,
+        "absolute_pde_residual": {
+          "mean": 0.0020561867859214544,
+          "median": 0.001363521907478571,
+          "p95": 0.006552781909704208,
+          "max": 0.03513951599597931
+        },
+        "absolute_normalized_price_derivative": {
+          "mean": 0.039298441261053085,
+          "median": 0.03781338408589363,
+          "p95": 0.08070489764213562,
+          "max": 0.11260959506034851
+        }
+      },
+      {
+        "v": 1.0,
+        "absolute_pde_residual": {
+          "mean": 0.002396641531959176,
+          "median": 0.0015916796401143074,
+          "p95": 0.007616672199219465,
+          "max": 0.0373605340719223
+        },
+        "absolute_normalized_price_derivative": {
+          "mean": 0.038948945701122284,
+          "median": 0.0376209057867527,
+          "p95": 0.07879886776208878,
+          "max": 0.10843389481306076
+        }
+      }
+    ]
+  },
+  "benchmark_boundary": {
+    "benchmark_parameters": {
+      "K": 10.0,
+      "tau": 0.25,
+      "kappa": 5.0,
+      "theta": 0.16,
+      "sigma_v": 0.9,
+      "rho": 0.1
+    },
+    "v_range": [
+      0.8,
+      1.0
+    ],
+    "n_grid": 201,
+    "S_star_at_v_0_8": 5.2895402908325195,
+    "S_star_at_v_1_0": 4.861725807189941,
+    "positive_steps": 0,
+    "negative_steps": 200,
+    "max_absolute_step": 0.0022749900817871094,
+    "dS_star_dv_min": -2.275458812713623,
+    "dS_star_dv_max": -2.0218355655670166,
+    "dS_star_dv_mean": -2.139119863510132
+  }
+}
