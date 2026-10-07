@@ -2,7 +2,7 @@
 
 Code, trained checkpoints and result files for
 
-> Zhixuan Chen, *Parametric Coupled Physics-Informed Neural Networks for American Put Option Pricing under the Heston Model*. Research paper (thesis) for the degree of Master of Mathematics in Computational Mathematics, University of Waterloo, 2026.
+> Zhixuan Chen, *Parametric Coupled Physics-Informed Neural Networks for American Put Option Pricing under the Heston Model*. Research paper for the degree of Master of Mathematics in Computational Mathematics, University of Waterloo, 2026.
 
 A single pair of networks prices an American put under the Heston stochastic-volatility model **over a range of Heston parameters** (κ, θ, σ_v, ρ), instead of being retrained for each parameter set:
 
