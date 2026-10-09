@@ -167,7 +167,7 @@ sbatch run_gpu.sh                    # or run_gpu_ablation_no_intrinsic.sh, etc.
 ## Not included
 
 - **Comparator networks.** Figure 4.2, Tables 4.2 and 4.5 and the reproduced rows of Table 4.4 (Section 4.1.1 of the thesis) come from separately trained comparator networks. Their code and checkpoints are not part of this repository. `visualize.plot_rohan_scaled_surface_comparison` only draws the figure from price grids that you supply.
-- **Literature prices.** The prices of other methods in Table 4.3 are transcribed from the cited papers. `benchmark_data.py` holds only the Ikonen–Toivanen values (Table 1 of their paper, operator-splitting method, finest grid (320, 128, 64)), stored to four decimals.
+- **Literature prices.** The prices of other methods in Table 4.3 are transcribed from the cited papers. `benchmark_data.py` holds only the Ikonen–Toivanen values (Table 1 of their paper, operator-splitting method, finest grid (320, 128, 64)), stored to five decimals.
 
 ## Reference data
 
